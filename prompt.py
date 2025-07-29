@@ -20,7 +20,7 @@ You are given an image of two ATM slips placed side by side. Extract the followi
 1. ATM Number (usually appears before the branch name)
 2. Branch Name
 3. A list of Denominations and their corresponding END values (like ₹500.00 - END: 879)
-4. Date and Time (if available)
+4. Date and Time (if available) - extract both date and time separately
 
 Respond ONLY in the following JSON format (no extra text):
 
@@ -28,6 +28,7 @@ Respond ONLY in the following JSON format (no extra text):
 ATM Number: <value>
 Branch: <value>
 Date: <value>
+Time: <value> (if available, otherwise null)
 Denominations and END values:
 ₹<amount> - END: <value>
 ...
@@ -36,6 +37,7 @@ Denominations and END values:
 ATM Number: <value>
 Branch: <value>
 Date: <value>
+Time: <value> (if available, otherwise null)
 Denominations and END values:
 ₹<amount> - END: <value>
 ...

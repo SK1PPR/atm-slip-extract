@@ -8,6 +8,7 @@ class ATM(BaseModel):
     atm_number: str
     branch: str
     date: str
+    time: str = None  # Add time field
     denominations: list[Denomination]
     
 class DiffSlip(BaseModel):
